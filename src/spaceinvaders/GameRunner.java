@@ -12,12 +12,15 @@ import javax.swing.*;
 
 public class GameRunner {
 
-    private TimerController timerController;
-    private KeybindingController keybindingController;
-    private WindowLoader windowLoader;
+    public TimerController timerController;
+    public KeybindingController keybindingController;
+    public WindowLoader windowLoader;
 
     public GameRunner() {
+
+
         GameRules.getInstance(new PatricksDayLevel());
+
         windowLoader = new WindowLoader();
         windowLoader.initialize();
         timerController = TimerController.getInstance(windowLoader.getFMain(), windowLoader.getPInfo());
