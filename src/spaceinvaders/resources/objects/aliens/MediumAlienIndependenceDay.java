@@ -9,7 +9,7 @@ import java.io.FileInputStream;
 import java.io.IOException;
 
 public class MediumAlienIndependenceDay extends BaseAlien {
-    public MediumAlienIndependenceDay(int points, BufferedImage image, Position position)  throws IOException {
+    public MediumAlienIndependenceDay(Position position)  throws IOException {
         super(100,  ImageIO.read(new FileInputStream("src/spaceinvaders/resources/sprites/aliens/alienMediumIndependenceDay.PNG")), position);
     }
 }
