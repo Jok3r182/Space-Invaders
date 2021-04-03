@@ -17,7 +17,7 @@ public class GameRunner {
     private WindowLoader windowLoader;
 
     public GameRunner() {
-        GameRules.getInstance(new Level0());
+        GameRules.getInstance(new PatricksDayLevel());
         windowLoader = new WindowLoader();
         windowLoader.initialize();
         timerController = TimerController.getInstance(windowLoader.getFMain(), windowLoader.getPInfo());
