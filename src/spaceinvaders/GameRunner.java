@@ -19,7 +19,7 @@ public class GameRunner {
     public GameRunner() {
 
 
-        GameRules.getInstance(new PatricksDayLevel());
+        GameRules.getInstance(new Level2());
 
         windowLoader = new WindowLoader();
         windowLoader.initialize();
