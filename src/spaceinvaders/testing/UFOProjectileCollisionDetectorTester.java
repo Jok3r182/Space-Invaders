@@ -31,6 +31,7 @@ public class UFOProjectileCollisionDetectorTester {
         //Then
         assertTrue(result, "UFO should be hit if the projectile is in its position");
     }
+
     @Test
     public void UFOshouldntBeHit() throws IOException {
         //Given
@@ -43,6 +44,6 @@ public class UFOProjectileCollisionDetectorTester {
         UFOProjectileCollisionDetector ufoProjectileCollisionDetector = new UFOProjectileCollisionDetector();
         boolean result = ufoProjectileCollisionDetector.process(projectile);
         //Then
-        assertFalse(result, "UFO should be hit if the projectile is in its position");
+        assertFalse(result, "UFO shouldnt be hit if the projectile is in its position");
     }
 }
