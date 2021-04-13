@@ -26,5 +26,5 @@ jobs:
       - uses: actions/checkout@v2
       - name: JUnit Report Action
         working-directory: ./src/spaceinvaders/testing/
-        run: java AlienProjectileCollisionDetectorTester
+        run: java GameRunnerTester
   
