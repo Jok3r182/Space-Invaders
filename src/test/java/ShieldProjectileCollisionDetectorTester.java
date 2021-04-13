@@ -1,5 +1,3 @@
-package testing;
-
 import org.junit.Test;
 import spaceinvaders.GameRunner;
 import spaceinvaders.engine.GameRules;
