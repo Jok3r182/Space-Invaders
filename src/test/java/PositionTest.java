@@ -2,7 +2,7 @@ import static org.junit.jupiter.api.Assertions.*;
 import org.junit.Test;
 import spaceinvaders.engine.object.Position;
 
-public class PositionTester {
+public class PositionTest {
     @Test
     public void translatingPositionXShouldChangeItsX(){
         //Given

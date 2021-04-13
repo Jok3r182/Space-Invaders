@@ -4,11 +4,11 @@ import spaceinvaders.engine.GameRules;
 import spaceinvaders.engine.misc.TimerController;
 import spaceinvaders.resources.scenes.levels.Level0;
 
-public class TimerControllerTester {
+public class TimerControllerTest {
 
     private TimerController timerController;
 
-    public TimerControllerTester(){
+    public TimerControllerTest(){
         GameRules gameRules = GameRules.getInstance(new Level0());
         timerController = TimerController.getInstance(null, null);
     }

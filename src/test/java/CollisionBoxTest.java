@@ -3,7 +3,7 @@ import org.junit.Test;
 import spaceinvaders.engine.object.CollisionBox;
 import spaceinvaders.engine.object.Position;
 
-public class CollisionBoxTester {
+public class CollisionBoxTest {
     @Test
     public void shouldReturnTrueIfTwoCollisionBoxesAreTouching(){
         //Given

@@ -5,10 +5,10 @@ import spaceinvaders.engine.object.GameObject;
 import java.awt.*;
 import java.awt.image.BufferedImage;
 
-public class GameObjectTester {
+public class GameObjectTest {
     private BufferedImage testingSprite;
 
-    public GameObjectTester(){
+    public GameObjectTest(){
         testingSprite = new BufferedImage(150, 150, BufferedImage.TYPE_INT_RGB);
         Graphics2D graphics = testingSprite.createGraphics();
         graphics.setPaint(new Color(150,150,150));

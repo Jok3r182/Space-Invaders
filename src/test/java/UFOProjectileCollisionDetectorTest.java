@@ -13,7 +13,7 @@ import java.io.IOException;
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
-public class UFOProjectileCollisionDetectorTester {
+public class UFOProjectileCollisionDetectorTest {
 
     @Test
     public void UFOshouldBeHit() throws IOException {

@@ -14,7 +14,7 @@ import java.io.IOException;
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
-public class AlienProjectileCollisionDetectorTester {
+public class AlienProjectileCollisionDetectorTest {
 
     @Test
     public void AlienShouldBeHit() throws IOException {

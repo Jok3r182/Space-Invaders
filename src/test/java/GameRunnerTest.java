@@ -3,10 +3,10 @@ import org.junit.Test;
 import spaceinvaders.engine.GameRules;
 import spaceinvaders.resources.scenes.levels.Level0;
 
-public class GameRunnerTester {
+public class GameRunnerTest {
     private GameRules gameRules;
 
-    public GameRunnerTester(){
+    public GameRunnerTest(){
         gameRules = GameRules.getInstance(new Level0());
     }
 
