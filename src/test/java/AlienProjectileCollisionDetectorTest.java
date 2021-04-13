@@ -8,6 +8,7 @@ import spaceinvaders.resources.objects.BaseAlien;
 import spaceinvaders.resources.objects.BaseShieldPart;
 import spaceinvaders.resources.objects.Projectile;
 import spaceinvaders.resources.objects.aliens.UFO;
+import testerenv.GRTesterClass;
 
 import java.io.IOException;
 
@@ -20,7 +21,7 @@ public class AlienProjectileCollisionDetectorTest {
     public void AlienShouldBeHit() throws IOException {
 
         //Given
-        GameRunner gameRunner = new GameRunner();
+        GRTesterClass gameRunner = new GRTesterClass();
         gameRunner.timerController.stopAllTimers();
         GameRules gameRules = GameRules.getInstance();
         BaseAlien alien = gameRules.getLevel().getAlienGrid().getGrid().get(0).getColumn().get(0);
@@ -36,7 +37,7 @@ public class AlienProjectileCollisionDetectorTest {
     public void AlienShouldNotBeHit() throws IOException {
 
         //Given
-        GameRunner gameRunner = new GameRunner();
+        GRTesterClass gameRunner = new GRTesterClass();
         gameRunner.timerController.stopAllTimers();
         GameRules gameRules = GameRules.getInstance();
         Projectile projectile = new Projectile(new Position(0, 0), "player");

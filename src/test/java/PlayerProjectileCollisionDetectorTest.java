@@ -7,6 +7,7 @@ import spaceinvaders.resources.collisiondetectors.detectors.UFOProjectileCollisi
 import spaceinvaders.resources.objects.Projectile;
 import spaceinvaders.resources.objects.aliens.UFO;
 import spaceinvaders.resources.objects.player.Player;
+import testerenv.GRTesterClass;
 
 import java.io.IOException;
 
@@ -18,7 +19,7 @@ public class PlayerProjectileCollisionDetectorTest {
     @Test
     public void PlayerShouldBeHit() throws IOException {
         //Given
-        GameRunner gameRunner = new GameRunner();
+        GRTesterClass gameRunner = new GRTesterClass();
         gameRunner.timerController.stopAllTimers();
 
         Projectile projectile = new Projectile(new Position(0, 0), "alien");
@@ -38,7 +39,7 @@ public class PlayerProjectileCollisionDetectorTest {
     @Test
     public void PlayerShouldntBeHit() throws IOException {
         //Given
-        GameRunner gameRunner = new GameRunner();
+        GRTesterClass gameRunner = new GRTesterClass();
         gameRunner.timerController.stopAllTimers();
 
         Projectile projectile = new Projectile(new Position(0, 0), "alien");

@@ -11,6 +11,7 @@ import spaceinvaders.resources.objects.Projectile;
 import spaceinvaders.resources.objects.aliens.UFO;
 import spaceinvaders.resources.scenes.levels.Level0;
 import spaceinvaders.resources.scenes.levels.PatricksDayLevel;
+import testerenv.GRTesterClass;
 
 import java.io.IOException;
 import java.util.List;
@@ -22,7 +23,7 @@ public class ShieldProjectileCollisionDetectorTest {
     @Test
     public void shouldReturnTrueIfPlayerProjectileIsHittingAShield() throws IOException {
         //Given
-        GameRunner gameRunner = new GameRunner();
+        GRTesterClass gameRunner = new GRTesterClass();
         gameRunner.timerController.stopAllTimers();
         GameRules gameRules = GameRules.getInstance();
         BaseShieldPart baseShieldPart = gameRules.getLevel().getShields().get(0).getShield().get(0);
@@ -36,7 +37,7 @@ public class ShieldProjectileCollisionDetectorTest {
     @Test
     public void shouldReturnFalseIfPlayerProjectileIsNotHittingAShield() throws IOException {
         //Given
-        GameRunner gameRunner = new GameRunner();
+        GRTesterClass gameRunner = new GRTesterClass();
         gameRunner.timerController.stopAllTimers();
         GameRules gameRules = GameRules.getInstance();
         BaseShieldPart baseShieldPart = gameRules.getLevel().getShields().get(0).getShield().get(0);
@@ -50,7 +51,7 @@ public class ShieldProjectileCollisionDetectorTest {
     @Test
     public void shouldReturnTrueIfNonPlayerProjectileIsHittingAShield() throws IOException {
         //Given
-        GameRunner gameRunner = new GameRunner();
+        GRTesterClass gameRunner = new GRTesterClass();
         gameRunner.timerController.stopAllTimers();
         GameRules gameRules = GameRules.getInstance();
         BaseShieldPart baseShieldPart = gameRules.getLevel().getShields().get(0).getShield().get(0);
@@ -64,7 +65,7 @@ public class ShieldProjectileCollisionDetectorTest {
     @Test
     public void shouldReturnFalseIfNonPlayerProjectileIsNotHittingAShield() throws IOException {
         //Given
-        GameRunner gameRunner = new GameRunner();
+        GRTesterClass gameRunner = new GRTesterClass();
         gameRunner.timerController.stopAllTimers();
         GameRules gameRules = GameRules.getInstance();
         BaseShieldPart baseShieldPart = gameRules.getLevel().getShields().get(0).getShield().get(0);

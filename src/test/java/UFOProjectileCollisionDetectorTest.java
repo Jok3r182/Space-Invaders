@@ -7,6 +7,7 @@ import spaceinvaders.resources.objects.Projectile;
 import spaceinvaders.resources.objects.aliens.UFO;
 import spaceinvaders.resources.objects.player.Player;
 import spaceinvaders.resources.scenes.levels.PatricksDayLevel;
+import testerenv.GRTesterClass;
 
 import java.io.IOException;
 
@@ -18,7 +19,7 @@ public class UFOProjectileCollisionDetectorTest {
     @Test
     public void UFOshouldBeHit() throws IOException {
         //Given
-        GameRunner gameRunner = new GameRunner();
+        GRTesterClass gameRunner = new GRTesterClass();
         gameRunner.timerController.stopAllTimers();
         Projectile projectile = new Projectile(new Position(0, 0), "player");
         GameRules gameRules = GameRules.getInstance();
@@ -33,7 +34,7 @@ public class UFOProjectileCollisionDetectorTest {
     @Test
     public void UFOshouldntBeHit() throws IOException {
         //Given
-        GameRunner gameRunner = new GameRunner();
+        GRTesterClass gameRunner = new GRTesterClass();
         gameRunner.timerController.stopAllTimers();
         Projectile projectile = new Projectile(new Position(20, 20), "player");
         GameRules gameRules = GameRules.getInstance();

@@ -21,7 +21,6 @@ public class TimerController {
     private static TimerController timerController;
 
 
-
     private TimerController(JFrame fMain, InfoPanel pInfo){
         gameSettings = GameSettings.getInstance();
         timers = new ArrayList<>();
