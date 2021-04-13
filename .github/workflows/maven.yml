@@ -15,7 +15,7 @@ jobs:
     name: Build and Run Tests
     runs-on: ubuntu-latest
     steps:
-      - run: export DISPLAY=':1'
+      - run: export DISPLAY=:0.0
       - name: Checkout Code
         uses: actions/checkout@v1
       - name: Build and Run Tests
