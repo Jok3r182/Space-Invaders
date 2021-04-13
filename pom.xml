@@ -21,6 +21,9 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
+    <build>
+    <testSourceDirectory>src/test/java</testSourceDirectory>
+    </build>
     <properties>
         <maven.compiler.source>8</maven.compiler.source>
         <maven.compiler.target>8</maven.compiler.target>
