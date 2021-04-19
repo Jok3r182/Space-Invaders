@@ -19,7 +19,7 @@ public class Level2 extends BaseLevel {
     private GameSettings gameSettings;
 
     public Level2() {
-        super(new AlienIndependenceDayGrid0());
+        super(new AlienGrid3());
         gameSettings = GameSettings.getInstance();
         playerPositionY = (int)(gameSettings.getWindowHeight() * 0.8);
         shields = new ArrayList<>();
@@ -43,7 +43,7 @@ public class Level2 extends BaseLevel {
 
     @Override
     public BaseLevel resetLevel(){
-        return new LevelIndependenceDay();
+        return new Level2();
     }
 
 }
